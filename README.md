@@ -210,7 +210,7 @@ Here are some simple steps to evaluate if your DAG ran successfully:
 2. View the log output of the second task - does the data appear cleaner than the original data?
 3. View the count output (in the log panel) of the third task. What values do you get?
 4. Note the log panel of the final task. Notice that the cleaned log file was saved to `/tmp/cleaned_log_2025_xxxxxxxxxx.txt`. This was written to the scheduler container of your four-container Airflow deployment.
-5. Use `docker ps` to find the container ID of the running scheduler container. Enter into the shell of that container by referring to the container ID:
+5. Use `docker ps` to find the container ID of the running scheduler container. Enter into the shell of that container using `docker exec -it` and referring to the container ID. That command will look something like this:
 
     ```
     docker exec -it 1a2b3c /bin/bash
