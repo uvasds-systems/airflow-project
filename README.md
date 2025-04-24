@@ -217,6 +217,7 @@ Here are some simple steps to evaluate if your DAG ran successfully:
     ```
 
 6. `cd` to the `/tmp/` directory of that container and view the actual log file using `cat`. This is the cleaned file, which could be shipped to storage, a database, or a cache by modifying the final DAG task, or adding a new one.
+7. Finally, notice in the `store_log_counts` function that you stored the dataset using `.xcom`. This means that if you click the "Datasets" tab at the top of the Airflow GUI, you should see it listed.
 
 ## Submit
 
