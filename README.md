@@ -6,12 +6,13 @@ Welcome to Apache Airflow.
 
 ## Setup
 
-- Docker Desktop
+- Fork this repository into your own GitHub account.
+- Be sure you have Docker Desktop running.
 - Install the `astro` CLI from Astronomer.io. Follow [these instructions](https://www.astronomer.io/docs/astro/cli/install-cli/) for your platform.
 
 ## Project Contents
 
-Your Astro project contains the following files and folders:
+This Airflow project contains the following files and folders:
 
 - dags/: This folder contains the Python files for your Airflow DAGs. By default, this project does not yet contain a DAG:
 - Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
@@ -23,7 +24,7 @@ Your Astro project contains the following files and folders:
 
 ## Write a DAG
 
-Let's write a simple ETL pipeline example that pulls a "messy" data file from a remote source. Then let's have Airflow clean up the document by removing empty lines and unnecessary characters. Next let's extract a count of certain values present in the log, and output those values to (1) a log file; (2) a stored text file; and (3) an Airflow Dataset, where another DAG could make use of it.
+For this lab you will write a simple ETL pipeline example that pulls a "messy" data file from a remote source. Then let's have Airflow clean up the document by removing empty lines and unnecessary characters. Next let's extract a count of certain values present in the log, and output those values to (1) a log file; (2) a stored text file; and (3) an Airflow Dataset, where another DAG could make use of it.
 
 0. View the original data file here and observe the messy details: https://s3.amazonaws.com/ds2002-resources/data/messy.log 
 1. Create a new file in the `dags/` directory of the project. Name it `ingestion.py`.
