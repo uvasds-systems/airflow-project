@@ -6,7 +6,7 @@ Welcome to Apache Airflow.
 
 ## Setup
 
-- Fork this repository into your own GitHub account.
+- Fork this repository into your own GitHub account and clone it to your local machine.
 - Be sure you have Docker Desktop running.
 - Install the `astro` CLI from Astronomer.io. Follow [these instructions](https://www.astronomer.io/docs/astro/cli/install-cli/) for your platform.
 
